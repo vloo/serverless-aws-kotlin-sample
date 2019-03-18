@@ -56,6 +56,12 @@ functions:
       - http:
           path: hello
           method: get
+  upload:
+    handler: eu.stolin.serverless.UploadToS3
+    events:
+      - http:
+          path: upload
+          method: post
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events

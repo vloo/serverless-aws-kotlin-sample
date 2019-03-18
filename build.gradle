@@ -53,9 +53,11 @@ dependencies {
   compile group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.11.519'
   compile group: 'com.amazonaws', name: 'aws-java-sdk-cloudsearch', version: '1.11.519'
 
-  compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version:'2.8.5'
-  compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version:'2.8.5'
-  compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version:'2.8.5'
+  compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version:'2.9.8'
+  compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version:'2.9.8'
+  compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version:'2.9.8'
+  compile group: 'com.fasterxml.jackson.module', name: 'jackson-module-kotlin', version: '2.9.8'
+
 }
 
 task deploy(type: Exec, dependsOn: 'shadowJar') {
